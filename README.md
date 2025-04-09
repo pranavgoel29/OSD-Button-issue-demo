@@ -8,7 +8,8 @@ This project demonstrates a specific issue with OpenSeadragon (OSD) where:
 
 1. The viewer starts lagging significantly on tablets/mobile devices (not on desktop/Mac) when overlays containing OSD buttons created with `openSeaDragon.Button` are removed
 2. The lag appears to be related to the OpenSeadragon MouseTracker events.
-3. Custom buttons resolve the lag issue but introduce another problem: they don't properly handle mouse clicks on desktop (clicks pass through to the canvas)
+3. Custom buttons resolve the lag issue but introduce another problem: they don't properly handle mouse clicks on desktop when using Chromium-based browsers (clicks pass through to the canvas)
+4. Custom buttons work correctly on Firefox PC but fail on Chromium-based browsers
 
 The demo uses a React + TypeScript application to clearly illustrate these cross-platform interaction problems.
 
