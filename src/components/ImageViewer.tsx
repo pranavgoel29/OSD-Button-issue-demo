@@ -57,7 +57,7 @@ const ImageViewer: React.FC = memo(() => {
       const response = {
         data: {
           image_id: "12345",
-          image_url: "https://wallpaperaccess.com/full/4601229.png",
+          image_url: "public/4601229.png",
         },
       };
       if (!response.data) throw new Error("Failed to fetch image");
