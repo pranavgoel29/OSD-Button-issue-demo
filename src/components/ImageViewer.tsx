@@ -247,10 +247,10 @@ const ImageViewer: React.FC = memo(() => {
   }, [isFullscreen]);
 
   return (
-    <div className="flex flex-col bg-background h-screen">
-      <div className="bg-background flex-1 flex items-center justify-center">
+    <div className="flex flex-col bg-background h-full">
+      <div className="bg-background p-4 mt-4">
         <div
-          className="w-full mx-50 bg-card rounded-lg shadow-lg overflow-hidden"
+          className="max-w-3xl mx-auto bg-card rounded-lg shadow-lg overflow-hidden"
           ref={containerRef}
         >
           <ControlButtons
